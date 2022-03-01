@@ -1,0 +1,58 @@
+.my-carousel-container {
+    height: 100vh;
+}
+
+.my-container-img {
+    height: 50%;
+    width: 70%;
+}
+
+.my-carousel-item {
+    display: none;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.my-active {
+    display: block;
+}
+
+.my-previous,
+.my-next {
+    position: absolute;
+    background-color: azure;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.my-previous {
+    left: 1rem;
+}
+
+.my-next {
+    right: 1rem;
+}
+
+.my-bookmark-container {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.my-circle {
+    display: inline-block;
+    height: .75rem;
+    width: .75rem;
+    background-color: rgb(134, 134, 118);
+    border-radius: 50%;
+}
+
+.my-circle.my-active-circle {
+    background-color: beige;
+}
