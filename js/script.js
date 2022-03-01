@@ -11,6 +11,16 @@ const nextBtn = document.getElementById('btn-next');
 
 let activeElement = 0;
 
+prevBtn.addEventListener('click', function() {
+    carouselElements[activeElement].classList.remove('my-active');
+    bookmarkElements[activeElement].classList.remove('my-active-circle');
+
+    activeElement--;
+
+    carouselElements[activeElement].classList.add('my-active');
+    bookmarkElements[activeElement].classList.add('my-active-circle');
+});
+
 nextBtn.addEventListener('click', function() {
     carouselElements[activeElement].classList.remove('my-active');
     bookmarkElements[activeElement].classList.remove('my-active-circle');
