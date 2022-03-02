@@ -14,10 +14,8 @@
     object-fit: cover;
 }
 
-.my-active {
-    display: block;
-}
 
+/* Set buttons */
 .my-previous,
 .my-next {
     position: absolute;
@@ -25,7 +23,7 @@
     height: 50px;
     width: 50px;
     border-radius: 50%;
-
+    
     top: 50%;
     transform: translateY(-50%);
 }
@@ -37,6 +35,12 @@
 .my-next {
     right: 1rem;
 }
+
+/* Class active for js */
+.my-active {
+    display: block;
+}
+
 
 .my-bookmark-container {
     position: absolute;
@@ -64,6 +68,7 @@
     opacity: 0.6;
 }
 
+/* Class opacity for js */
 .my-opacity-min {
     opacity: 1;
 }
