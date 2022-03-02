@@ -20,7 +20,7 @@ prevBtn.addEventListener('click', function() {
     activeElement--;
 
     if(activeElement < 0) {
-        activeElement = 4;
+        activeElement = carouselElements.length - 1;
     }
 
     carouselElements[activeElement].classList.add('my-active');
@@ -36,7 +36,7 @@ nextBtn.addEventListener('click', function() {
 
     activeElement++;
 
-    if(activeElement > 4) {
+    if(activeElement > (carouselElements.length - 1)) {
         activeElement = 0;
     }
 
